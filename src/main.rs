@@ -13,6 +13,7 @@ mod messages;
 mod actors;
 mod db_models;
 mod schema;
+mod insertables;
 
 use db_utils::{get_pool, AppState, DbActor};
 use services::{create_user_article, fetch_user_articles, fetch_users};

@@ -11,3 +11,11 @@ pub struct FetchUser;
 pub struct FetchUserArticles {
   pub user_id: i32,
 }
+
+#[derive(Message)]
+#[rtype(result = "QueryResult<Article>")]
+pub struct CreateArticle {
+  pub title: String,
+  pub content: String,
+  pub created_by: i32,
+}
